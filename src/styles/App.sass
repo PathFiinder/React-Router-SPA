@@ -1,0 +1,48 @@
+.app
+    max-width: 1024px
+    background-color: #403F4D
+    margin: 0 auto
+    min-height: 100vh
+    font-family: 'Hepta Slab', serif
+    .header
+        height: 150px
+        width: 100%
+        overflow: hidden
+        @media (min-width: 667px)
+            height: 200px
+        @media (min-width: 812px)
+            height: 250px
+        @media (min-width: 1024px)
+            height: 350px
+    .main
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        min-height: 500px
+        height: calc(100vh - 150px - 30px)
+        @media (min-width: 667px)
+            height: calc(100vh - 200px - 30px)
+        @media (min-width: 812px)
+            height: calc(100vh - 250px - 30px)
+        @media (min-width: 1024px)
+            height: calc(100vh - 350px - 30px)
+        &__navigation
+            margin: 10px 0px 0px 10px
+            height: 90px
+            flex-basis: 90px
+            @media (min-width: 1024px)
+                flex-basis: 150px
+        &__page
+            background-color: #2E2D33
+            flex-basis: calc(100% - 90px - 30px)
+            height: calc(100% - 20px)
+            margin: 10px
+            overflow: hidden
+            @media (min-width: 1024px)  
+                margin: 10px 0 10px 10px
+                flex-basis: calc(100% - 150px - 20px)
+    .footer
+        background-color: #A7A7A7
+        height: 30px
+        text-align: center
+

@@ -1,0 +1,70 @@
+.page__singleArticle.singleArticle
+    height: calc(33.33% - 10px)
+    overflow: hidden
+    position: relative
+    border: 1px solid black
+    margin: 5px
+    .singleArticle__title
+        position: absolute
+        top: 5px
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 11px
+        width: 100%
+        text-align: center
+        @media (min-width: 768px) and (min-height: 1024px)
+            font-size: 14px
+    .singleArticle__author
+        position: absolute
+        top: 50px
+        left: 60px
+        font-size: 11px
+        text-align: center
+        width: 130px
+        @media (min-width: 568px)
+            top: 30px
+            left: 190px
+            width: auto
+        @media (min-width: 768px) and (min-height: 1024px)
+            font-size: 14px
+            top: 40px
+        &--bold
+            font-weight: bold
+    .singleArticle__content
+        display: none
+        @media (min-width: 568px)
+            display: block
+            font-size: 11px
+            position: absolute
+            top: 60px
+            left: 190px
+            width: 200px
+            @media (min-width: 640px)
+                width: 250px
+            @media (min-width: 731px)
+                width: 350px
+            @media (min-width: 812px)
+                width: 400px
+            @media (min-width: 768px) and (min-height: 1024px)
+                font-size: 12px
+                width: 420px
+                height: 100px
+                top: 70px
+            height: 70px
+            overflow: scroll
+            overflow-x: hidden
+            &::-webkit-scrollbar 
+                width: 0px
+                background: transparent
+    .singleArticle__image
+        position: absolute
+        top: 60px
+        left: 5px
+        height: 80px
+        width: 60px
+        @media (min-width: 568px)
+            height: 100px
+            width: 150px
+            top: 40px
+        @media (min-width: 768px) and (min-height: 1024px)
+            height: 150px
