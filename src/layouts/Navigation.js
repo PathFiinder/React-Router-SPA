@@ -4,7 +4,7 @@ import "../styles/Navigation.sass";
 
 const linkList = [
   { name: "Home", path: "/", exact: true },
-  { name: "Items", path: "/items" },
+  { name: "Authors", path: "/authors" },
   { name: "contact", path: "/contact" }
 ];
 
